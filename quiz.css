@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #f3e7e9 0%, #e3eeff 100%);
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+p {
+    color: #555;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Container */
+.container {
+    margin: 100px auto;
+    padding: 20px;
+    width: 70%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Question Section */
+.question-section {
+    margin-top: 20px;
+    position: relative; /* Make the container relative */
+    padding-bottom: 80px; /* Add space for the Next button */
+}
+
+.question-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+}
+
+.primary-btn {
+    background-color: #ff0066;
+    color: white;
+    font-weight: 600;
+}
+
+.primary-btn:hover {
+    background-color: #e60059;
+}
+
+/* Answers Buttons */
+.answers-container button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #ff99cc;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.answers-container button:hover {
+    background-color: #e68aaa;
+}
+
+/* Fixed Next Button */
+#next-question {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none; /* Initially hidden */
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #ff0066;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#next-question:hover {
+    background-color: #e60059;
+}
+
+.answers-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Result Section */
+.result-section {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+#result-title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}

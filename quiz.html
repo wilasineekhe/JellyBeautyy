@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.4">
+    <title>Skin Tone Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Find Your Skin Tone</h1>
+        <p>Answer 10 quick questions to discover your skin tone!</p>
+        <button id="start-quiz" class="primary-btn">Start Quiz</button>
+    </div>
+
+    <!-- Question Section -->
+    <div class="question-section" style="display:none;">
+        <h2 id="question-title">Question</h2>
+        <img id="question-image" src="" alt="Related Image" class="question-image">
+        <div id="answers" class="answers-container"></div>
+        <button id="next-question" class="primary-btn" style="display:none;">Next</button>
+    </div>
+
+    <!-- Result Section -->
+    <div class="result-section" style="display:none;">
+        <h2 id="result-title"></h2>
+        <button id="retake-quiz" class="primary-btn">Retake Quiz</button>
+        <button id="go-to-page" class="primary-btn">Back to Cosmetics</button>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

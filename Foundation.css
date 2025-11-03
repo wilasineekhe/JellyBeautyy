@@ -1,0 +1,245 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.menu-bar {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: transform 0.3s ease-in-out;
+}
+.menu-bar a {
+    color: #606060; 
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 2px; 
+    position: relative;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-radius: 5px; 
+    font-size: 16px;
+}
+.menu-bar a.active{
+    color: #ff0099; 
+}
+
+.menu-bar a.wish-list{
+    color: #000000;
+    padding: 5px;
+    background: rgb(170, 204, 238);
+}
+
+.menu-bar.hidden {
+    transform: translateY(-100%);
+}
+
+
+.menu-bar a:hover {
+    text-decoration: underline;
+    color: #ff0099;
+}
+
+
+.product-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Products container to align products horizontally */
+.products-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Product image styling */
+.product-image img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 5px;
+}
+
+/* Product info styling */
+.product-info {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.color {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.color span {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+
+.product-info .color1 {
+    background-color: #f0e2d6;}
+.product-info .color2 {
+    background-color: #f0e2d6;}
+.product-info .color3 {
+    background-color: #e0d3b8;}
+.product-info .color4 {
+    background-color: #e0d3b8;}
+.product-info .color5 {
+    background-color: #e7d2c1;}
+.product-info .color6 {
+    background-color: #e7d2c1;}
+
+.product-info .color7 {
+    background-color: rgb(252, 186, 132);}
+.product-info .color8 {
+    background-color: rgb(252, 186, 132);}
+.product-info .color9 {
+    background-color: #dfcca8;}
+.product-info .color10 {
+    background-color: #dfcca8;;}
+.product-info .color11 {
+    background-color: #e0d3b8;}
+.product-info .color12 {
+    background-color: #e0d3b8;}
+
+.product-info .color13 {
+    background-color: rgb(252, 186, 132);}
+.product-info .color14 {
+    background-color: rgb(252, 186, 132);}
+.product-info .color15 {
+    background-color: #e0d3b8;}
+.product-info .color16 {
+    background-color: #e0d3b8;}
+.product-info .color17 {
+    background-color: #e8dbc4;;}
+.product-info .color18 {
+    background-color: #e8dbc4;}
+
+.product-info .color19 {
+    background-color: #dbc6b0;}
+.product-info .color20 {
+    background-color: #dbc6b0;}
+
+.product-info .color21 {
+    background-color: #ecd8c2;}
+.product-info .color22 {
+    background-color: #ecd8c2;}
+
+.product-info .color23 {
+    background-color: #d9c4ad;}
+.product-info .color24 {
+    background-color: #d9c4ad;}
+
+.product-info .color25 {
+    background-color: #f1dbc3;}
+.product-info .color26 {
+    background-color: #f1dbc3}
+
+.product-info .color27 {
+    background-color: #e5cfb7;}
+.product-info .color28 {
+    background-color: #e5cfb7;}
+    
+.product-info .color29 {
+    background-color: #d2bca5;}
+.product-info .color30 {
+    background-color: #d2bca5;}
+    
+
+
+
+/* Button styling for slider navigation */
+button.prev, button.next {
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+button.prev:hover, button.next:hover {
+    color: #FF1493;
+}
+
+
+.menu-bar .wish-list {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #454545;
+    font-size: 13px;
+}
+
+.wish-list svg {
+    fill: #ff7bac;
+    width: 20px;
+    height: 20px;
+}
+
+/* Style for the favorite button */
+.favorite-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ccc; /* Default grey color */
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transition: color 0.3s ease;
+}
+
+.favorite-button:hover {
+    color: #ff6b6b; /* Hover color */
+}
+
+.favorite-button.active {
+    color: #ff3b3b; /* Active color when the product is added to the wishlist */
+}
+
+.product {
+    position: relative;
+}

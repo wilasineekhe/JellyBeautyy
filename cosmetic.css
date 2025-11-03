@@ -1,0 +1,156 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.menu-bar {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: transform 0.3s ease-in-out;
+}
+.menu-bar a {
+    color: #606060; 
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 2px; 
+    position: relative;
+    transition: color 0.3s, border-bottom 0.3s;
+    border-radius: 5px; 
+    font-size: 16px;
+}
+.menu-bar a.active{
+    color: #ff0099; 
+}
+
+.menu-bar a.wish-list{
+    color: #000000;
+    padding: 5px;
+    background: rgb(170, 204, 238);
+}
+
+.menu-bar.hidden {
+    transform: translateY(-100%);
+}
+
+
+.menu-bar a:hover {
+    text-decoration: underline;
+    color: #ff0099;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+.text-section {
+    width: 50%;
+    padding: 50px;
+}
+.text-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-style: 'Courier New';
+}
+.text-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.text-section .quiz-button {
+    padding: 15px 20px;
+    background-color: #e195c2;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: space-between; /* Space between images */
+    align-items: center;
+    width: 100%;
+}
+
+.mySlides {
+    flex: 1; /* Allows each slide to take up equal space */
+    margin: 0 10px; /* Space between slides */
+}
+
+.mySlides img {
+    padding-top: 70px;
+    width: 100%; /* Ensure the images take up the entire space of each slide */
+    height: auto;
+}
+
+
+/* Hide images by default */
+.mySlides {
+    display: none;
+}
+
+/* Image fade animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.menu-bar .wish-list {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #454545;
+    font-size: 13px;
+}
+
+.wish-list svg {
+    fill: #ff7bac;
+    width: 20px;
+    height: 20px;
+}
+
+/* Style for the favorite button */
+.favorite-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ccc; /* Default grey color */
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transition: color 0.3s ease;
+}
+
+.favorite-button:hover {
+    color: #ff6b6b; /* Hover color */
+}
+
+.favorite-button.active {
+    color: #ff3b3b; /* Active color when the product is added to the wishlist */
+}
+
+.product {
+    position: relative;
+}
